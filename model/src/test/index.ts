@@ -1,5 +1,5 @@
 import { IsObject, IsOptional, IsString } from 'class-validator';
-import { Ref } from 'typesaurus';
+import { collection, Ref } from 'typesaurus';
 
 import { FirestoreDataConverter } from '../utils';
 
@@ -52,3 +52,5 @@ export class TestObject
     };
   }
 }
+
+export const testCollection = collection<TestObject>('test');

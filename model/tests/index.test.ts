@@ -9,7 +9,7 @@ describe('test object validation', () => {
       displayName: {} as any,
     });
 
-    return validate(user).then((errors) => {
+    return validate(user).then(errors => {
       expect(errors.length).toBe(1);
     });
   });
